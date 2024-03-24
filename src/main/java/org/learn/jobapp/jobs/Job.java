@@ -64,4 +64,5 @@ public class Job {
     public void setLocation(String location) {
         this.location = location;
     }
+
 }
