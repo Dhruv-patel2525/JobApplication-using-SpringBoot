@@ -1,4 +1,4 @@
-package org.learn.jobapp.Impl;
+package org.learn.jobapp.jobs.Impl;
 
 import org.learn.jobapp.jobs.Job;
 import org.learn.jobapp.jobs.JobRepository;

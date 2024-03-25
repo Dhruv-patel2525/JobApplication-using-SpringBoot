@@ -1,6 +1,7 @@
 package org.learn.jobapp.jobs;
 
 import jakarta.persistence.*;
+import org.learn.jobapp.company.Company;
 
 @Entity
 public class Job {
@@ -12,6 +13,10 @@ public class Job {
     private String minSalary;
     private String maxSalary;
     private String location;
+    @ManyToOne
+    private Company company;
+
+
 
     public Job(Long id, String title, String description, String minSalary, String maxSalary, String location) {
         this.id = id;
@@ -74,4 +79,11 @@ public class Job {
         this.location = location;
     }
 
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 }

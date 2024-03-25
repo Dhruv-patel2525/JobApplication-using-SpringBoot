@@ -1,11 +1,10 @@
 package org.learn.jobapp.jobs;
 
-import org.learn.jobapp.Impl.JobServiceImpl;
+import org.learn.jobapp.jobs.Impl.JobServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -14,7 +13,7 @@ public class JobController {
 
     private JobService jobService;
 
-    public JobController(JobServiceImpl jobService)
+    public JobController(JobService jobService)
     {
         this.jobService = jobService;
     }
@@ -29,7 +28,7 @@ public class JobController {
     public ResponseEntity<String> createJob(@RequestBody Job job)
     {
         jobService.createJob(job);
-        return new ResponseEntity<>("Job Added Successfully",HttpStatus.OK);
+        return new ResponseEntity<>("Job Added Successfully",HttpStatus.CREATED);
     }
 
     @GetMapping("/{id}")
