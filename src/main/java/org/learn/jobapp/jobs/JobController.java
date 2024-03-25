@@ -1,5 +1,6 @@
 package org.learn.jobapp.jobs;
 
+import org.learn.jobapp.Impl.JobServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +14,8 @@ public class JobController {
 
     private JobService jobService;
 
-    public JobController(JobService jobService) {
+    public JobController(JobServiceImpl jobService)
+    {
         this.jobService = jobService;
     }
 
