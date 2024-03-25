@@ -12,7 +12,6 @@ import java.util.Optional;
 @Service
 public class JobServiceImpl implements JobService {
     JobRepository jobRepository;
-    public List<Job> jobs = new ArrayList<>();
     public JobServiceImpl(JobRepository jobRepository) {
         this.jobRepository = jobRepository;
     }
