@@ -57,7 +57,6 @@ public class ReviewServiceImpl implements ReviewService {
         }
         return false;
     }
-
     @Override
     public boolean deleteReview(Long companyId, Long reviewId) {
         Company company = companyService.getCompanyById(companyId);

@@ -1,6 +1,5 @@
 package org.learn.jobapp.jobs;
 
-import org.learn.jobapp.jobs.Impl.JobServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -45,7 +44,8 @@ public class JobController {
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteJobById(@PathVariable Long id)
     {
-        if(jobService.deleteJobById(id))
+        boolean isDeleted = jobService.deleteJobById(id);
+        if(isDeleted)
         {
             return ResponseEntity.ok("Job Deleted Successfully");
         }
@@ -55,7 +55,8 @@ public class JobController {
     @PutMapping("/{id}")
     public ResponseEntity<String> updateJobById(@PathVariable Long id,@RequestBody Job job)
     {
-        if(jobService.updateJobById(id,job))
+        boolean isUpdated = jobService.updateJobById(id,job);
+        if(isUpdated)
         {
             return ResponseEntity.ok("Updated SuccessFully");
         }
