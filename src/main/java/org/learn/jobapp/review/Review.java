@@ -1,4 +1,4 @@
-package org.learn.jobapp.Review;
+package org.learn.jobapp.review;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

@@ -1,4 +1,4 @@
-package org.learn.jobapp.Review;
+package org.learn.jobapp.review;
 
 import java.util.List;
 

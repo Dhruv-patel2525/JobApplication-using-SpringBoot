@@ -1,4 +1,4 @@
-package org.learn.jobapp.Review;
+package org.learn.jobapp.review;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

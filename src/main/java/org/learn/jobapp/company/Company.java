@@ -2,7 +2,7 @@ package org.learn.jobapp.company;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import org.learn.jobapp.Review.Review;
+import org.learn.jobapp.review.Review;
 import org.learn.jobapp.jobs.Job;
 
 import java.util.List;

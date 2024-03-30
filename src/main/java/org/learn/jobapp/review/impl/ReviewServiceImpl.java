@@ -1,8 +1,8 @@
-package org.learn.jobapp.Review.impl;
+package org.learn.jobapp.review.impl;
 
-import org.learn.jobapp.Review.Review;
-import org.learn.jobapp.Review.ReviewRepository;
-import org.learn.jobapp.Review.ReviewService;
+import org.learn.jobapp.review.Review;
+import org.learn.jobapp.review.ReviewRepository;
+import org.learn.jobapp.review.ReviewService;
 import org.learn.jobapp.company.Company;
 import org.learn.jobapp.company.CompanyService;
 import org.springframework.stereotype.Service;
